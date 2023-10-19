@@ -1,0 +1,29 @@
+
+****************************Done ********************************
+
+Side Navbar: An accessible side navigation bar.
+
+Total Credit Display: Prominent display of available credit.
+
+Total Debit Display: Clear view of total debits.
+
+Add Transaction: Record transactions with category and amount.
+
+Submit Button: Easily confirm transaction entries.
+
+Categorized Entry: Automatic transaction categorization.
+
+Graphical Representation: Visualize credit and debit totals.
+
+Transaction History Table: Review past financial activities.
+
+User Authentication
+
+Search and Filtering
+
+**************************** To Do ********************************
+
+
+
+Budget Tracking
+

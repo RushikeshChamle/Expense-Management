@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <title>PayBuzz</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 15%">
+      <h1 class="w3-bar-item">Paybuzz</h1>
+      <a href="#" class="w3-bar-item w3-button">Dashboard</a>
+      <a href="#" class="w3-bar-item w3-button">Card</a>
+      <a href="payment.html" class="w3-bar-item w3-button">Transactions</a>
+      <a href="signIn.html" class="w3-bar-item w3-button">Sign Out</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left: 15%">
+      <div class="mainwhitebg">
+        <h2 id="message">Hey there! Rushikesh</h2>
+
+        <div class="first-section" id="my-section">
+          <img id="card" src="card(7).png" alt="" />
+          <input type="file" id="imageUpload" accept="image/*" style="display: none;" />
+          <button id="addcard">Add Card</button>
+        </div>
+
+
+
+
+
+
+        <!-- <div class="first-section" id="my-section">
+          <img id="card" src="card.png" alt="" />
+          <button id="addcard">Add Card</button>
+        </div> -->
+
+
+        <div class="second-section" id="my-section2">
+          <button id="addpayment" onclick="openPaymentModal()">
+            +<br />Add
+          </button>
+          <div class="subblock" id="transaction">
+            <h3 id="crex">50000</h3>
+          </div>
+          <div class="subblock2" id="transaction1">
+            <h3 id="debex">40000</h3>
+          </div>
+        </div>
+        <div class="third-section" id="my-section3">
+          <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+        </div>
+      </div>
+    </div>
+      <div id="paymentModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closePaymentModal()">&times;</span>
+        <h1>Add Payment</h1>
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="debit">Debit</option>
+          <option value="credit">Credit</option>
+        </select>
+        <label id="input" for="total">Total:</label>
+        <input id="number" id="total" name="total" autocomplete="off"/>
+        <label for="expenseCategory" id="expense">Expense Category:</label>
+    <select id="expenseCategory" name="expenseCategory">
+      <option value="food">Food</option>
+      <option value="entertainment">Entertainment</option>
+      <option value="shopping">Shopping</option>
+    </select>
+
+        <button id="submitPayment" onclick="submitPayment()">Submit</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="chnageImg.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script>// This code should be placed in your script.js file or within a <script> tag in your HTML.
+    window.addEventListener("load", initializeChart);
+    </script>
+<body>
+
+
+
+<script src="graph.js">
+</script>
+</html>

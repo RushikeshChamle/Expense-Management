@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PayBuzz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 15%">
+      <h1 class="w3-bar-item">Paybuzz</h1>
+      <a href="index.html" class="w3-bar-item w3-button">Dashboard</a>
+      <a href="#" class="w3-bar-item w3-button">Card</a>
+      <a href="#" class="w3-bar-item w3-button">Transactions</a>
+      <a href="signIn.html" class="w3-bar-item w3-button">Sign Out</a>
+    </div>
+
+    <div class="mainwhitebg">
+      <input
+        type="text"
+        id="tableSearch"
+        placeholder="Search for a transaction"
+      />
+      <input type="date" id="dateFilter" />
+      <div class="table" id="table">
+        <table class="table table-hover" id="tb">
+          <thead>
+            <tr>
+              <th scope="col">Sr</th>
+              <th scope="col">Transaction Date</th>
+              <th scope="col">Transaction Type</th>
+              <th scope="col">Total Payment</th>
+              <th scope="col">Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>10/09/2023</td>
+              <td>Credit</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>11/09/2023</td>
+              <td>Debit</td>
+              <td>500</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>11/09/2023</td>
+              <td>Credit</td>
+              <td>500</td>
+              <td>1000</td>
+            </tr>
+
+            <tr>
+              <td scope="row">4</td>
+              <td>12/09/2023</td>
+              <td>Credit</td>
+              <td>500</td>
+              <td>1500</td>
+            </tr>
+            <tr>
+              <td scope="row">5</td>
+              <td>13/09/2023</td>
+              <td>Debit</td>
+              <td>500</td>
+              <td>1000</td>
+            </tr>
+
+            <tr>
+              <td scope="row">6</td>
+              <td>13/09/2023</td>
+              <td>Credit</td>
+              <td>5000</td>
+              <td>6000</td>
+            </tr>
+            <tr>
+              <td scope="row">7</td>
+              <td>14/09/2023</td>
+              <td>Debit</td>
+              <td>4000</td>
+              <td>2000</td>
+            </tr>
+
+            <tr>
+              <td scope="row">7</td>
+              <td>14/09/2023</td>
+              <td>Credit</td>
+              <td>500</td>
+              <td>2500</td>
+            </tr>
+            <tr>
+              <td scope="row">9</td>
+              <td>14/09/2023</td>
+              <td>Credit</td>
+              <td>500</td>
+              <td>3000</td>
+            </tr>
+            <tr>
+              <td scope="row">10</td>
+              <td>15/09/2023</td>
+              <td>Debit</td>
+              <td>500</td>
+              <td>2500</td>
+            </tr>
+            <tr>
+              <td scope="row">11</td>
+              <td>15/09/2023</td>
+              <td>Credit</td>
+              <td>400</td>
+              <td>2900</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="search.js"></script>
+    <script src="datefilter.js"></script>
+  </body>
+</html>

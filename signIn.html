@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="styl.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign In</h1>
+      <form id="loginForm">
+        <input id="addUserName" type="text" placeholder="Username" required />
+        <input
+          type="password"
+          id="passwordField"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Sign In" />
+      </form>
+      <p class="message" id="errorMessage">Incorrect username or password.</p>
+      <div class="links">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Create an account</a>
+      </div>
+    </div>
+
+    <script src="forgotpsw.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
